@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00023E"
+    tools:context=".MainActivityProvConvo">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="730dp">
+
+        <LinearLayout
+            android:id="@+id/logo_section"
+            android:layout_width="220dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/appname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ProSeek SERVICES"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upperfunction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_section"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/searchbar"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edittext_2_bg"
+                android:drawablePadding="20dp"
+                android:padding="4dp"
+                android:text="Welcome, User!"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <ImageView
+                android:id="@+id/notif"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/bellat_rmbg" />
+
+
+            <ImageView
+                android:id="@+id/messages"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/message1" />
+
+            <ImageView
+                android:id="@+id/urprofile"
+                android:layout_width="30dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/profileremovebg" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/confirmation"
+            android:layout_below="@+id/upperfunction"
+            android:layout_width="410dp"
+            android:layout_height="600dp"
+            android:background="@drawable/white_rounded_bg"
+            android:padding="10dp"
+            android:layout_marginBottom="10dp">
+
+
+            <LinearLayout
+                android:id="@+id/cstmr_approach"
+                android:layout_width="351dp"
+                android:layout_height="58dp"
+                android:layout_marginStart="10dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="92dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:src="@drawable/progirl1">
+
+                </ImageView>
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10dp"
+                        android:text="\@emily_01"
+                        android:textColor="@android:color/black"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Status: "
+                            android:textColor="@android:color/black" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Pending"
+                            android:textColor="#C50000" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/option"
+                android:layout_width="76dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="20dp"
+                android:layout_alignParentEnd="true"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/accept_button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:backgroundTint="#00A914"
+                    android:paddingTop="5dp"
+                    android:text="Accept"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="8sp" />
+
+                <Button
+                    android:id="@+id/decline_button1"
+                    android:layout_width="match_parent"
+                    android:layout_height="28dp"
+                    android:backgroundTint="#C50000"
+                    android:text="Decline"
+                    android:textColor="@android:color/white"
+                    android:textAlignment="center"
+                    android:paddingTop="5dp"
+                    android:textSize="8sp" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!-- Conversation Section -->
+        <ScrollView
+            android:id="@+id/conversation_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+
+            android:layout_above="@id/message_input_section"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp">
+
+            <LinearLayout
+                android:id="@+id/messages_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="bottom"
+                android:padding="12dp">
+
+                <!-- User Message (left) -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="start"
+                    android:layout_marginBottom="8dp">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/profileremovebg"
+                        android:layout_gravity="bottom" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/message_leftbg"
+                        android:layout_marginStart="8dp"
+                        android:padding="8dp"
+                        android:text="Hi! I’m interested in learning more about your services. Could you please send me the details and pricing? Thank you!"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <!-- Response Message (right) -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="end"
+                    android:layout_marginBottom="8dp"
+                    android:layout_gravity="end">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/message_rightbg"
+                        android:padding="8dp"
+                        android:text="Hi! Thanks for reaching out 😊 Here are the details and pricing. Let me know if you have any questions—we’re here to help!"
+                        android:textColor="#333333"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <!-- Message Input Section -->
+        <LinearLayout
+            android:id="@+id/message_input_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="@drawable/message_intputbg">
+
+            <EditText
+                android:id="@+id/message_input"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Message..."
+                android:padding="12dp"
+                android:background="@drawable/message_edittext"
+                android:textColor="#333333"
+                android:textSize="14sp"
+                android:maxLines="4" />
+
+            <ImageButton
+                android:id="@+id/send_button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="@null"
+                android:contentDescription="Send Message"
+                android:src="@android:drawable/ic_menu_send" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</ScrollView>

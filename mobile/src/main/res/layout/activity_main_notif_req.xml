@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#00023E"
+    tools:context=".MainActivityNotifReq">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/logo_section"
+            android:layout_width="220dp"
+            android:layout_height="21dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="30dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/logo" />
+
+            <TextView
+                android:id="@+id/appname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ProSeek SERVICES"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/upperfunction"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo_section"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="202dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/rounded_edittext_2_bg"
+                android:drawablePadding="20dp"
+                android:padding="4dp"
+                android:text="Welcome, User!"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black" />
+
+            <ImageView
+                android:id="@+id/notif"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/bellat_rmbg" />
+
+            <ImageView
+                android:id="@+id/messages"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_margin="5dp"
+                android:src="@drawable/message1" />
+
+            <ImageView
+                android:id="@+id/urprofile"
+                android:layout_width="30dp"
+                android:layout_height="31dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/profileremovebg" />
+        </LinearLayout>
+
+        <!-- Service Category Section -->
+
+        <TextView
+            android:id="@+id/request"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/upperfunction"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:padding="12dp"
+            android:text="REQUESTS"
+            android:textColor="@android:color/white"
+            android:gravity="center"
+            android:background="@drawable/white_outline_box"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <!-- Request Items Container -->
+        <LinearLayout
+            android:id="@+id/requests_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/request"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:orientation="vertical">
+
+            <!-- Request Item 1 -->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rounded_bg"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="351dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:src="@drawable/progirl1">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:text="\@emily_01"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status: "
+                                android:textColor="@android:color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pending"
+                                android:textColor="#C50000" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/accept_button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:backgroundTint="#00A914"
+                        android:paddingTop="5dp"
+                        android:text="Accept"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="8sp" />
+
+                    <Button
+                        android:id="@+id/decline_button1"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:backgroundTint="#C50000"
+                        android:text="Decline"
+                        android:textColor="@android:color/white"
+                        android:textAlignment="center"
+                        android:paddingTop="5dp"
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rounded_bg"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="351dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:src="@drawable/progirl2">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:text="\@alex99"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status: "
+                                android:textColor="@android:color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Accepted"
+                                android:textColor="#00A914" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/accept_button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:backgroundTint="#00A914"
+                        android:paddingTop="5dp"
+                        android:text="Accept"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="8sp" />
+
+                    <Button
+                        android:id="@+id/decline_button2"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:backgroundTint="#C50000"
+                        android:text="Decline"
+                        android:textColor="@android:color/white"
+                        android:textAlignment="center"
+                        android:paddingTop="5dp"
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rounded_bg"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="351dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:src="@drawable/proboy3">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:text="\@davesmith"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status: "
+                                android:textColor="@android:color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pending"
+                                android:textColor="#C50000" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/accept_button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:backgroundTint="#00A914"
+                        android:paddingTop="5dp"
+                        android:text="Accept"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="8sp" />
+
+                    <Button
+                        android:id="@+id/decline_button3"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:backgroundTint="#C50000"
+                        android:text="Decline"
+                        android:textColor="@android:color/white"
+                        android:textAlignment="center"
+                        android:paddingTop="5dp"
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/white_rounded_bg"
+                android:padding="10dp"
+                android:layout_marginBottom="10dp">
+
+
+                <LinearLayout
+                    android:layout_width="351dp"
+                    android:layout_height="58dp"
+                    android:layout_marginStart="10dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="92dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="left"
+                        android:src="@drawable/progirl4">
+
+                    </ImageView>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingTop="10dp"
+                            android:text="\@nanayluz"
+                            android:textColor="@android:color/black"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Status: "
+                                android:textColor="@android:color/black" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Pending"
+                                android:textColor="#C50000" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="76dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/accept_button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:backgroundTint="#00A914"
+                        android:paddingTop="5dp"
+                        android:text="Accept"
+                        android:textAlignment="center"
+                        android:textColor="@android:color/white"
+                        android:textSize="8sp" />
+
+                    <Button
+                        android:id="@+id/decline_button4"
+                        android:layout_width="match_parent"
+                        android:layout_height="28dp"
+                        android:backgroundTint="#C50000"
+                        android:text="Decline"
+                        android:textColor="@android:color/white"
+                        android:textAlignment="center"
+                        android:paddingTop="5dp"
+                        android:textSize="8sp" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

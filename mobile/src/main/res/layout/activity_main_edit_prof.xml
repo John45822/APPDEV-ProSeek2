@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:id="@+id/main"
+    android:layout_height="match_parent"
+    android:background="#0A0A4F"
+    tools:context=".MainActivityProviderProf">
+
+    <TextView
+        android:id="@+id/tvProfileHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:text="PROFILE"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profile_image"
+        android:layout_below="@+id/tvProfileHeader"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/profileremovebg">
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+
+
+
+    <TextView
+        android:id="@+id/Personal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Personal Information"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+
+
+    <!-- Right: Personal Info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Personal"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        >
+
+        <!-- USERNAME ROW -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:paddingBottom="4dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blueandwhite"
+                android:text="USERNAME:"
+                android:textColor="#00023E"
+                android:textSize="12sp"
+                android:padding="2dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#132156"
+                android:text=""
+                android:padding="2dp"
+                android:textColor="#FFFFFF"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+
+        <!-- PROF ROW -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blueandwhite"
+                android:padding="2dp"
+                android:text="NO:"
+                android:textColor="#00023E"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#132156"
+                android:padding="2dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- LOC ROW -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blueandwhite"
+                android:padding="2dp"
+                android:text="LOC:"
+                android:textColor="#00023E"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#132156"
+                android:padding="2dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- EMAIL ROW -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="4dp"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp">
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_blueandwhite"
+                android:padding="2dp"
+                android:text="EMAIL:"
+                android:textColor="#00023E"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#132156"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:padding="2dp"
+                android:text=""
+                android:textColor="#FFFFFF"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+<!--         SERVICES CHECKBOX SECTION-->
+        <ScrollView
+            android:id="@+id/services_scroll"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/location"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginRight="60dp">
+
+            <LinearLayout
+                android:id="@+id/services_layout"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Select your services:"
+                    android:textColor="@android:color/white"
+                    android:textSize="16sp"
+                    android:layout_marginBottom="10dp" />
+
+                <CheckBox android:id="@+id/cbTutoring"
+                    android:text="Tutoring"
+                    android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cbChores" android:text="House Chores" android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cbProject" android:text="Project" android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cbAssistant" android:text="Assistant" android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cbHealthcare" android:text="Healthcare" android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cbFoodDelivery" android:text="Food Delivery" android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cbPhotography" android:text="Photography" android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cbRentals" android:text="Rentals" android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cbMachinery" android:text="Machinery" android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+                <CheckBox android:id="@+id/cbTailoring" android:text="Tailoring" android:textColor="@android:color/white"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"/>
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <Button
+            android:id="@+id/save_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/save_str"
+            android:layout_gravity="center"
+            android:textColor="@android:color/white"
+            android:background="@drawable/login_button_outline"
+            android:paddingLeft="24dp"
+            android:paddingRight="24dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

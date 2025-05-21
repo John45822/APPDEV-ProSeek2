@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/app_icon_round"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ProSeekServices"
+        tools:targetApi="31">
+        <activity
+            android:name=".MainActivityEditProf"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityProvConvo"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityProviderProf"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityNotifReq"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityPostServiceForm"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityProvHomeScr"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityProOp"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityConversation"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityMessages"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityProfile"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivitySearch"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityHomeScr"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivityCreateAcc"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
